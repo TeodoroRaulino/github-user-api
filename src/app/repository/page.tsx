@@ -7,7 +7,7 @@ import { RepositoryProps } from "@/types/Repository";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
-export default function repos() {
+export default function RepositoryPage() {
   const [repository, setRepository] = useState<RepositoryProps[]>([]);
 
   const [loading, setLoading] = useState(false);
@@ -31,7 +31,7 @@ export default function repos() {
       }
     }
     fetchData();
-  }, []);
+  }, [search]);
 
   return (
     <div className="bg-slate-200 dark:bg-slate-900 min-h-screen">
