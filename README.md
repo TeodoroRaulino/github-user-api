@@ -1,34 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# GitHub User API
 
-## Getting Started
 
-First, run the development server:
+## Sobre a Aplicação
+Este projeto é uma aplicação simples que utiliza a [API do GitHub Users](https://docs.github.com/en/rest/users/users?apiVersion=2022-11-28) para exibir informações de usuários do GitHub. A aplicação permite que o usuário insira o nome de um usuário válido do GitHub e, em seguida, exibe um card com algumas informações sobre esse usuário. Além disso, a aplicação possui uma página adicional que mostra os repositórios do usuário ordenados por data de atualização.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+## Funcionalidades
+- Pesquisa de usuários: Insira o nome de um usuário do GitHub para exibir suas informações.
+- Listagem de repositórios: Após encontrar um usuário, é possível acessar uma página com cards dos repositórios do usuário, ordenados por data de atualização.
+- Local Storage: Uma vez que um usuário válido é encontrado, suas informações são salvas no Local Storage, permitindo que sejam exibidas novamente quando retornar à aplicação.
+- Toast de usuário não encontrado: Se o usuário inserido não for encontrado, um toast será exibido com a mensagem de "Usuário não encontrado".
+- Dark Mode: A aplicação possui suporte para modo escuro.
+  
+## Tecnologias Utilizadas
+- [React](https://react.dev/) - Biblioteca JavaScript para criação de interfaces de usuário.
+- [Next.js](https://nextjs.org/) - Framework React com recursos adicionais para desenvolvimento de aplicações web.
+- [Tailwind CSS](https://tailwindcss.com/) - Biblioteca de utilitários CSS para estilização rápida e responsiva.
+- [Vercel](https://vercel.com/dashboard) - Plataforma de deploy e hospedagem para aplicações web.
+
+
+## Como Executar o Projeto
+1. Certifique-se de ter o Node.js instalado em sua máquina.
+2. Clone este repositório para o seu computador.
+3. Na pasta do projeto, instale as dependências executando o seguinte comando no terminal:
 ```
+Copy code
+npm install
+```
+1. Após a instalação das dependências, execute o seguinte comando para iniciar a aplicação:
+```
+Copy code
+npm run dev
+```
+1. A aplicação será executada localmente em http://localhost:3000.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Deploy da Aplicação
+A aplicação está hospedada na plataforma Vercel e pode ser acessada através do seguinte link: [GitHub User API - Vercel](github-user-api-sooty.vercel.app).
