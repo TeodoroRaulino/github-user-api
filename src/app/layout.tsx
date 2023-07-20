@@ -2,13 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import "./globals.css";
-import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
-
-export const metadata: Metadata = {
-  title: "GitHub User API",
-  description: "GitHub User API",
-};
 
 export default function RootLayout({
   children,
@@ -17,6 +11,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <title>GitHub User API</title>
+      </head>
       <body>
         <ThemeProvider enableSystem={true} attribute="class">
           <Navbar />
