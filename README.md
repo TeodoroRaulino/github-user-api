@@ -23,12 +23,10 @@ Este projeto é uma aplicação simples que utiliza a [API do GitHub Users](http
 2. Clone este repositório para o seu computador.
 3. Na pasta do projeto, instale as dependências executando o seguinte comando no terminal:
 ```
-Copy code
 npm install
 ```
 1. Após a instalação das dependências, execute o seguinte comando para iniciar a aplicação:
 ```
-Copy code
 npm run dev
 ```
 1. A aplicação será executada localmente em http://localhost:3000.
